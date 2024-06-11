@@ -3,19 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <title>1. FC Hinterforst</title>
-
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .container {
+      padding: 1em;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .section-title {
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+    .game, .sponsor, .contact {
+      margin-bottom: 1.5em;
+    }
+    .game p, .sponsor p, .contact p {
+      margin: 0.5em 0;
+    }
+    .comment-section {
+      margin-top: 1em;
+    }
+    .comment-section textarea {
+      width: 100%;
+      height: 100px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <nav>
-    
-  </nav>
-  <h1>1. FC Hinterforst</h1>
 
-  <footer>
-    
-  </footer>
+<header>
+  <h1>1. FC Hinterforst</h1>
+  <p>Willkommen auf der offiziellen Webseite des 1. FC Hinterforst</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#spiele">Spiele</a>
+  <a href="#sponsoren">Sponsoren</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div class="container">
+  <section id="home">
+    <h2 class="section-title">Home</h2>
+    <p>Willkommen beim 1. FC Hinterforst! Unser Verein wurde in der kleinen Gemeinde Hinterforst gegründet und hat eine lange Tradition von sportlichen Erfolgen, sozialer Integration und Gemeinschaftsgeist. Erleben Sie die emotionalen Momente und Feiern unseres Vereins durch unser Bildmaterial.</p>
+    <img src="https://thispersondoesnotexist.com/image" alt="Vereinsbild">
+    <h3>Aktuelle Nachrichten</h3>
+    <p>Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Updates.</p>
+    <h3>Kommende Spiele und Veranstaltungen</h3>
+    <p>Sehen Sie sich die Vorschau unserer kommenden Spiele und Veranstaltungen an und seien Sie dabei!</p>
+  </section>
+
+  <section id="spiele">
+    <h2 class="section-title">Spiele</h2>
+    <h3>Kommende Spiele</h3>
+    <div class="game">
+      <p>Datum: 25. Juni 2024</p>
+      <p>Uhrzeit: 15:00</p>
+      <p>Ort: Hinterforst Stadion</p>
+      <p>Gegner: FC Beispielstadt</p>
+      <a href="#">Tickets kaufen</a> | <a href="#">Anfahrtsinformationen</a>
+    </div>
+    <h3>Vergangene Spiele</h3>
+    <div class="game">
+      <p>Datum: 18. Juni 2024</p>
+      <p>Uhrzeit: 15:00</p>
+      <p>Ort: Hinterforst Stadion</p>
+      <p>Gegner: FC Musterstadt</p>
+      <p>Ergebnis: 3-1 Sieg</p>
+      <h4>Spielbericht</h4>
+      <p>Es war ein spannendes Spiel mit vielen Höhepunkten. Unsere Mannschaft zeigte eine hervorragende Leistung...</p>
+      <div class="comment-section">
+        <h4>Kommentare</h4>
+        <textarea placeholder="Ihre Meinung..."></textarea>
+        <button>Kommentar absenden</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsoren">
+    <h2 class="section-title">Sponsoren</h2>
+    <div class="sponsor">
+      <img src="https://via.placeholder.com/150" alt="Sponsor Logo">
+      <p>Name: Beispiel Unternehmen</p>
+      <p>Beschreibung: Ein führendes Unternehmen in der Region, das den 1. FC Hinterforst unterstützt...</p>
+      <a href="#">Website besuchen</a>
+    </div>
+    <h3>Wie Sie uns unterstützen können</h3>
+    <p>Erfahren Sie mehr über unsere Sponsoring-Pakete und die Vorteile, die sie bieten.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="contact">
+      <h3>Ansprechpartner</h3>
+      <p>Name: Max Mustermann</p>
+      <p>Position: Vereinspräsident</p>
+      <p>Email: max.mustermann@example.com</p>
+    </div>
+    <h3>Kontaktformular</h3>
+    <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">E-Mail:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Nachricht:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      <button type="submit">Absenden</button>
+    </form>
+    <h3>Vereinsadresse</h3>
+    <p>Adresse: Hinterforstweg 1, 12345 Hinterforst</p>
+    <p>Anfahrtsinformationen zum Vereinsgelände finden Sie <a href="#">hier</a>.</p>
+    <h3>Soziale Medien</h3>
+    <p>Folgen Sie uns auf <a href="#">Facebook</a>, <a href="#">Twitter</a> und <a href="#">Instagram</a>.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2024 1. FC Hinterforst</p>
+</footer>
+
 </body>
 </html>
